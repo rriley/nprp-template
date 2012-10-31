@@ -1,0 +1,154 @@
+%-----------------------------------------------------------------------------
+%
+%               Template for LaTeX File For NPRP
+%
+% Name:         nprp.tex
+% Purpose:      To write the nprp proposal in latex
+
+% Author:       Adnan Majeed
+%
+%Affiliations:
+%		SUNY Binghamton 
+%               adnan@cs.binghamton.edu 
+%		CMU Qatar
+%		amajeed@qatar.cmu.edu
+%
+% Created:      09 October 2008
+%
+% Updates:
+%	 For NPRP 4th Cycle: Nael Abu Ghazaleh -- November 2010
+%    For NPRP 6th Cycle: Ryan Riley -- October 2012
+%-----------------------------------------------------------------------------
+
+
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage{color}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{pst-gantt}
+
+% The template uses Arial.  This is close enough.
+\renewcommand{\rmdefault}{phv}
+\renewcommand{\sfdefault}{phv}
+
+\pagestyle{fancy}
+
+% The following margins settings work, but you must do the following
+% to compile properly:
+% 1. Create .dvi file with latex
+% 2. Run dvips -t letter -Ppdf nprp.dvi
+% 3. Run ps2pdf nprp.ps
+% Now you have a PDF file with the right page size and nice looking margins.
+
+%Horizontal Margins
+\setlength{\hoffset}{-.5in}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\textwidth}{7.5in}
+\setlength{\headwidth}{7.5in}
+
+%Vertical Margins
+\setlength{\voffset}{-.5in}
+\setlength{\topmargin}{0pt}
+\setlength{\textheight}{9 in}
+
+% Header and Footer Stuff.
+\addtolength{\headheight}{0.125in}
+\setlength{\headsep}{0.125in}
+\fancyfoot[C]{}
+\lfoot{\textbf{\small{QNRF Form}\color{red}\small{ RP (Revised Sep.
+2012)}}}
+\rfoot{\textbf{\small{Page {\thepage}} \hspace{1.2cm}}}
+\rhead{\footnotesize{NPRP No. : }}
+\lhead{}
+\renewcommand{\headrulewidth}{0.1pt}
+\renewcommand{\footrulewidth}{0.1pt}
+
+% Special colors needed.
+\definecolor{blue2}{RGB}{79,129,189}
+
+% This makes there be dot leaders for sections.  Hooray!
+% Taken from: http://garoth.com/?p=48
+% Ironically, he didn't know where he got it from.
+\makeatletter
+\renewcommand\l@section[2]{%
+  \ifnum \c@tocdepth >\z@
+    \addpenalty\@secpenalty
+    \addvspace{1.0em \@plus\p@}%
+    \setlength\@tempdima{1.5em}%
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      \leavevmode \bfseries
+      \advance\leftskip\@tempdima
+      \hskip -\leftskip
+      #1\nobreak\ 
+      \leaders\hbox{$\m@th\mkern \@dotsep mu\hbox{.}\mkern \@dotsep mu$}
+     \hfil \nobreak\hb@xt@\@pnumwidth{\hss #2}\par
+    \endgroup
+  \fi}
+\makeatother
+
+\begin{document}
+
+% The font is not quite right on this page.  They use Cambria,
+% but Latex doesn't do that well.  I picked what I think is close.
+\begin{titlepage}
+\begin{center}
+\fontfamily{bch}
+\fontsize{11}{15}
+\selectfont
+NATIONAL PRIORITY RESEARCH PROGRAM
+
+\vspace{4.5cm}
+
+\fontsize{40}{48}
+\selectfont
+Proposal Title
+\vspace{0.4cm}
+{\color{blue2}\hrule}
+\vspace{0.4cm}
+\fontsize{22}{26}
+\selectfont
+NPRP No.:
+
+\end{center}
+\end{titlepage}
+
+\rfoot{}
+\renewcommand\contentsname{Table of Content}
+\tableofcontents
+
+\newpage
+\setcounter{page}{1}
+\rfoot{\textbf{\small{Page {\thepage}} \hspace{1.2cm}}}
+%Research Plan (Items 1-7 not to exceed 25 pages)
+
+\section{Background / literature survey}
+
+\section{Objectives / significance}
+
+\section{Preliminary data or studies}
+
+\section{Research design and methods}
+
+\section{Anticipated results and evaluation criteria}
+
+\section{Strategy for project continuation}
+
+\section{Plans for disseminating research results}
+
+\newpage
+% References have a different footer.
+\lfoot{\textbf{\small{QNRF Form}\color{red}\small{ REF (Revised June
+2010)}}}
+\rfoot{\textbf{\small{Page {\thepage}} of \pageref{LastPage}}}
+\setcounter{page}{1}
+
+\nocite{Nobody06}
+\bibliography{nprp}
+\bibliographystyle{plain}
+
+\end{document}
+
