@@ -17,6 +17,6 @@ the following:
   3. Run ps2pdf nprp.ps
 
 ### Known Bugs
-The title page in the QNRF template uses Cambria.  This is not easy to
+* The title page in the QNRF template uses Cambria.  This is not easy to
 use in Latex without horribly painful tricks.
-The Table of Content page doesn't look perfect, but I think its close enough.
+* The Table of Content page doesn't look perfect, but I think its close enough.
