@@ -12,10 +12,9 @@ and distributed it.
 
 * When you compile it, make SURE you are using the letter paper size.  I do
 the following:
-1. Create .dvi file with latex
-2. Run dvips -t letter -Ppdf nprp.dvi
-3. Run ps2pdf nprp.ps
-Now you have a PDF file with the right page size and nice looking margins.
+  1. Create .dvi file with latex
+  2. Run dvips -t letter -Ppdf nprp.dvi
+  3. Run ps2pdf nprp.ps
 
 ### Known Bugs
 The title page in the QNRF template uses Cambria.  This is not easy to
