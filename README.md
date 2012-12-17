@@ -7,6 +7,11 @@ This template originally came to me from other sources, credits can be
 found inside.  I've simply packaged it up, updated it for the 6th cycle,
 and distributed it.
 
+### Disclaimer
+This template is *not* official nor sanctioned by QNRF.  I make no guarantee
+that they will accept a proposal that uses it.  However, it has been used
+in previous cycles by a number of proposals without issue.
+
 ### Instructions
 * Use this as the base for your proposal.
 
