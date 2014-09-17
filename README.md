@@ -4,7 +4,7 @@ NPRP proposal template using Latex.  QNRF supplies an MS-Word template, but
 I prefer to do my writing in Latex for a variety of reasons.
 
 This template originally came to me from other sources, credits can be 
-found inside.  I've simply packaged it up, updated it for the 6th cycle,
+found inside.  I've simply packaged it up, updated it for recent cycles,
 and distributed it.
 
 ### Disclaimer
@@ -20,6 +20,7 @@ the following:
   1. Run latex nprp.tex
   2. Run dvips -t letter -Ppdf nprp.dvi
   3. Run ps2pdf nprp.ps
+* The paper size might still be wrong, so you'll need to verify it in a PDF viewer.  The truth is, getting paper size correct in Latex is sometimes painful.  Pray that it works for you.
 
 ### Known Bugs
 * The title page in the QNRF template uses Cambria.  This is not easy to
