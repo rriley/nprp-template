@@ -18,12 +18,13 @@ in previous cycles by a number of proposals without issue.
 ### Instructions
 * Use this as the base for your proposal.
 
-* When you compile it, make SURE you are using the letter paper size.  I do
-the following:
-  1. Run latex nprp.tex
-  2. Run dvips -t letter -Ppdf nprp.dvi
-  3. Run ps2pdf nprp.ps
-* The paper size might still be wrong, so you'll need to verify it in a PDF viewer.  The truth is, getting paper size correct in Latex is sometimes painful.  Pray that it works for you.
+* When you compile it, make SURE you are using the letter paper size.  
+  * Using standard Latex I do the following:
+    1. Run latex nprp.tex
+    2. Run dvips -t letter -Ppdf nprp.dvi
+    3. Run ps2pdf nprp.ps
+  * Using pdflatex, it just works on my system, but this is potentially very system dependent.
+  * The paper size might still be wrong, so you'll need to verify it in a PDF viewer.  The truth is, getting paper size correct in Latex is sometimes painful.  Pray that it works for you.
 
 ### Known Bugs
 * The title page in the QNRF template uses Cambria.  This is not easy to
