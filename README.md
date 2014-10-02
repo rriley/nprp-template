@@ -1,3 +1,6 @@
+### Updates
+This template was last updated in Fall 2014 for the 8th cycle of the NPRP.
+
 ### Introduction
 This is a basic template to try and mimic the Qatar National Research Fund's
 NPRP proposal template using Latex.  QNRF supplies an MS-Word template, but
