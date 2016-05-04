@@ -1,6 +1,6 @@
 %-----------------------------------------------------------------------------
 %
-%               Template for LaTeX File For NPRP
+%               Template for LaTeX File For NPRP Final Report
 %
 % Name:         nprp.tex
 % Purpose:      To write an nprp proposal in latex
@@ -22,6 +22,9 @@
 %	For NPRP 8th Cycle
 %		Ryan Riley (ryan dot riley at qu dot edu dot qa)
 %		September 2014
+%   Adapted for NPRP Final Report
+% 		Ryan Riley  (ryan dot riley at qu dot edu dot qa)
+%		May 2016
 %-----------------------------------------------------------------------------
 
 
@@ -63,7 +66,7 @@
 \addtolength{\headheight}{0.125in}
 \setlength{\headsep}{0.125in}
 \fancyfoot[C]{}
-\lfoot{\textbf{{\fontsize{10}{1em}\selectfont QNRF Form \color{red} RP (Revised July 2014)}}}
+\lfoot{\textbf{{\fontsize{10}{1em}\selectfont QNRF Final Report}}}
 \rfoot{\textbf{{\fontsize{10}{1em}\selectfont Page {\thepage}} \hspace{1.2cm}}}
 \rhead{\makebox[2.5in][l]{{\fontsize{10}{1em}\selectfont NPRP No. : }}}
 \lhead{}
@@ -110,6 +113,7 @@ NATIONAL PRIORITY RESEARCH PROGRAM
 
 \fontsize{40}{48}
 \selectfont
+QNRF Final Report:\\
 Proposal Title
 \vspace{0.4cm}
 {\color{blue2}\hrule}
@@ -122,41 +126,72 @@ NPRP No.:
 \end{titlepage}
 
 \rfoot{}
-\renewcommand\contentsname{Table of Content}
-\tableofcontents
+
+\newpage
+\section*{Disclaimer}
+This Project outcomes report for the general public is displayed verbatim as submitted by the Principal Investigator(s) (PI’s) for this award. Any opinions, findings and conclusions or recommendations expressed in this report are those of the PI and do not necessarily reflect the views of the Qatar National Research Fund; QNRF has not approved or endorsed its content
+
+\newpage
+\section*{Acknowledgements}
+Put proper QNRF ack here.  (I don't remember it off hand.)
 
 \newpage
 \setcounter{page}{1}
 \rfoot{\textbf{\small{Page {\thepage}} \hspace{1.2cm}}}
+\renewcommand\contentsname{Table of Contents}
+\tableofcontents
 
-\noindent {\fontsize{14}{1em} \selectfont \textbf{Proposal Summary}}
-(This section should be copied from the "Proposal Summary" submitted in the LoI)
+\newpage
+\listoftables
 
-\bigskip
-\noindent {\fontsize{14}{1em}\selectfont \textbf{Research Plan}}
-(Items 1-7 not to exceed 30 pages)
+\newpage
+\listoffigures
 
+\newpage
+\section*{List of Acronyms}
 
-\section{Background / literature survey}
+\newpage
+\section*{Executive Summary}
 
-\section{Objectives / significance}
+\newpage
+\section{Introduction}
+\subsection{Background of Project}
+\subsection{Objectives of this Study}
+\subsection{Project Tasks/Aims}
 
-\section{Preliminary data or studies}
+\newpage
+\section{Literature Review}
 
-\section{Research design and methods}
+\newpage
+\section{Methodology}
 
-\section{Anticipated results and evaluation criteria}
+\newpage
+\section{Discussion of Results}
 
-\section{Plans for disseminating research results}
+\newpage
+\section{Potential Beneficiaries}
 
-\section{Future Plans}
+\newpage
+\section{Recommendations}
+
+\newpage
+\section{Conclusions}
+
+\newpage
+\nocite{Nobody06}
+\bibliography{nprp}
+\bibliographystyle{plain}
+
+\newpage
+\section{Nomenclatures}
+
+\newpage
+\section{Appendices}
 
 
 \newpage
 
-\nocite{Nobody06}
-\bibliography{nprp}
-\bibliographystyle{plain}
+
 
 \end{document}
 
